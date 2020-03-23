@@ -11,7 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
     <!--Meu CSS Externo-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster&display=swap" rel="stylesheet">
 
     <!--Título do meu site-->
     <title>Meu Portfólio</title>
@@ -30,7 +34,7 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-
+            <!--
             <div class="social-media">
                 <ul>
                     <li><a href="#"><img src="icones/Facebook_Rounded_Solid_icon-icons.com_61562.png"></a></li>
@@ -39,59 +43,71 @@
                     <li><a href="#"><img src="icones/whatsapp-black_100119.png"></a></li>
                 </ul>
             </div>
+            -->
         </header>
 
 
         <main>
-            <section class="parallax">
-                <!--APRESENTAÇÃO-->
-                <div class="portfolio">
-                    <h1>Sejam Bem Vindos!</h1>
-                    <h2>Eu sou o Fabrício, e abaixo estão alguns dos meus melhores projetos</h2>
+            <section class="profile">
+                <div class="parallax">
+                    <!--APRESENTAÇÃO-->
+                    <div class="portfolio">
+                        <h1>Sejam Bem Vindos!</h1>
+                        <h2>Eu sou o Fabrício,<br> e abaixo estão alguns dos meus melhores projetos</h2>
+                        <div>
+                           <a href="#"> <img class="seta" src="img/icone/baixo.png"></a>
+                        </div>
+                    </div>
+
+                    <!--PROJETOS-->
+                    <div class="galery">
+                        <article class="gal#d" src="img/Na-Brasa.jpg" alt="Na Brasa Churrascaria">
+                            <p class="gallery-title">Na Brasa - Churrascaria</p>
+                            <p class="gallery-text">O site da churrascaria Na Brasa foi desenvolvido utilizando html5,
+                                Css3, Javascript e Bootstrap
+                            </p>
+                            <a href="" class="open-project">Ver Projeto</a>
+                        </article>
+
+                        <article class="gallery-card">
+                            <img class="card" src="img/cantinho-ceu.jpg" alt="Cantinho do Céu - Resort">
+                            <p class="gallery-title">Cantinho do Céu</p>
+                            <p class="gallery-text">Cantinho do Céu é um resort numa ilha e seu site foi desenvolvido
+                                utilizando html5, Css3,
+                                Javascript e Bootstrap
+                            </p>
+                            <a href="#" class="open-project">Ver Projeto</a>
+                        </article>
+
+                        <article class="gallery-card2">
+                            <img class="card" src="img/Banda.jpg" alt="Banda Os Defensores da Fé">
+                            <p class="gallery-title">Banda - Os Defensores da Fé</p>
+                            <p class="gallery-text">Os Defensores da fé é uma banda de rock gospel e seu site foi
+                                desenvolvido utilizando WordPress
+                                como gerenciador de conteúdo
+                            </p>
+                            <a href="#" class="open-project">Ver Projeto</a>
+                        </article>
+
+                        <article class="gallery-card2">
+                            <img class="card" src="img/cantinho-delicias.jpg" alt="Restaurante Cantinho das Delícias">
+                            <p class="gallery-title">Cantinho das Delícias - Restaurante</p>
+                            <p class="gallery-text">O site do restaurante Cantinho das Delícias foi desenvolvido
+                                utilizando html5, Css3, Javascript e
+                                Bootstrap
+                            </p>
+                            <a href="#" class="open-project">Ver Projeto</a>
+                        </article>
+                    </div>
                 </div>
-
-                <!--PROJETOS-->
-
-                <article class="gallery-card">
-                    <img src="img/Na-Brasa.jpg" alt="Na Brasa Churrascaria">
-                    <p class="gallery-title">Na Brasa - Churrascaria</p>
-                    <p class="gallery-text">O site da churrascaria Na Brasa foi desenvolvido utilizando html5, Css3, Javascript e Bootstrap
-                    </p>
-                    <a href="#" class="open-project">Ver Projeto</a>
-                </article>
-
-                <article class="gallery-card">
-                    <img src="img/cantinho-ceu.jpg" alt="Cantinho do Céu - Resort">
-                    <p class="gallery-title">Cantinho do Céu</p>
-                    <p class="gallery-text">Cantinho do Céu é um resort numa ilha e seu site foi desenvolvido utilizando html5, Css3,
-                        Javascript e Bootstrap
-                    </p>
-                    <a href="#" class="open-project">Ver Projeto</a>
-                </article>
-
-                <article class="gallery-card">
-                    <img src="img/Banda.jpg" alt="Banda Os Defensores da Fé">
-                    <p class="gallery-title">Banda - Os Defensores da Fé</p>
-                    <p>Os Defensores da fé é uma banda de rock gospel e seu site foi desenvolvido utilizando WordPress
-                        como gerenciador de conteúdo
-                    </p>
-                    <a href="#" class="open-project">Ver Projeto</a>
-                </article>
-
-                <article class="gallery-card">
-                    <img src="img/cantinho-delicias.jpg" alt="Restaurante Cantinho das Delícias">
-                    <p class="gallery-title">Cantinho das Delícias - Restaurante</p>
-                    <p class="gallery-text">O site do restaurante Cantinho das Delícias foi desenvolvido utilizando html5, Css3, Javascript e
-                        Bootstrap
-                    </p>
-                    <a href="#" class="open-project">Ver Projeto</a>
-                </article>
             </section>
         </main>
 
         <!--Rodapé-->
         <footer>
-            Copyright &copy; Todos os direitos reservados
+            <div class="rodape">
+                <p> Copyright &copy; Todos os direitos reservados</p>
+            </div>
         </footer>
 
     </div>

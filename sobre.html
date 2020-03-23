@@ -11,7 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
     <!--Meu CSS Externo-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster&display=swap" rel="stylesheet">
 
     <!--Título do meu site-->
     <title>Meu Portfólio</title>
@@ -28,7 +32,7 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-
+            <!--
             <div class="social-media">
                 <ul>
                     <li><a href="#"><img src="icones/Facebook_Rounded_Solid_icon-icons.com_61562.png"></a></li>
@@ -37,12 +41,13 @@
                     <li><a href="#"><img src="icones/whatsapp-black_100119.png"></a></li>
                 </ul>
             </div>
+            -->
         </header>
 
         <section class="profile">
             <!--FOTO DE PERFIL-->
-            <div class="photo-perfil">
-                <img src="img/perfil.jpg" alt="Minha foto de perfil meu cachorro luke">
+            <div>
+                <img class="photo-perfil" src="img/perfil.jpg" alt="Minha foto de perfil meu cachorro luke">
             </div>
 
             <!--DESCRIÇÃO SOBRE MIM-->
@@ -55,7 +60,8 @@
                     como front end. Amo programar e tocar em tempo livre!<br>
                 </p>
 
-                <span class="languages">Conhecimentos:</span>
+
+                <span class="list"><i>Conhecimentos:</i></span>
                 <ul>
                     <li>-Html5</li>
                     <li>-Css3</li>
@@ -66,7 +72,7 @@
                     <li>-Angular</li>
                 </ul>
 
-                <span class="client">Cientes:</span>
+                <span class="list"><i>Cientes:</i></span>
                 <ul>
                     <li>-Na Brasa - Churrascaria</li>
                     <li>-Cantinho do Céu</li>
@@ -75,12 +81,15 @@
                 </ul>
             </div>
         </section>
-        <!--Rodapé-->
-        <footer>
-            Copyright &copy; Todos os direitos reservados
-        </footer>
-
     </div>
+    <!--Rodapé-->
+    <footer>
+        <div class="rodape">
+            <p> Copyright &copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
