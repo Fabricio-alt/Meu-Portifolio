@@ -10,10 +10,11 @@ body{
 }
 
 .profile {
-    background: linear-gradient(rgb(0, 0, 0), rgba(2, 2, 2, 0.767));
+    background: linear-gradient(rgb(0, 0, 0), rgba(2, 2, 2, 0.616));
     margin: auto;
     padding-bottom: 10px;
 }
+
 
 /*--------------- MENU-----------*/
 .header-nav{
@@ -45,7 +46,6 @@ body{
     color: rgb(12, 12, 12);
 }
 
-
 /*-----------PORTFOLIO------------ */
 .parallax {
     background-image: url(../img/fundo.jpg);
@@ -59,22 +59,26 @@ body{
 
 
 .portfolio{
-    padding: 100px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-left:15%;
+    margin-right: 15%;
     text-align: center;
+    background-color: rgba(40,40,40, .2);
+    border-radius: 30px;   
 }
 
 .portfolio h1 {
     font-size: 40px;
-    font-family: 'Lobster', cursive;
-    color: #e2d1d1;
-    text-shadow: 2px 2px #313030;
+    font-family: 'Lobster';
+    color: #fff;
+    
 }
 
 .portfolio h2 {
     font-size: 25px;
-    font-family: 'Lobster', cursive;
-    color: #e2d1d1;
-    text-shadow: 2px 2px #313030;
+    font-family: 'Lobster';
+    color: #fff; 
 }
 
 .seta {
@@ -83,16 +87,42 @@ body{
     margin-top: 50px;
 }
 
+.social-media .icon{
+    margin-right: 900px;
+    background: transparent;
+    top: -8px;  
+    padding: -10px;
+
+}
+
+
+.social-media .icon li{
+    display: inline;
+
+}
+
+
+/*------INÍCIO DA GALERIA------------*/
+
 .galery{
     background-color:rgba(10, 10, 10, 0.966);
     margin-top: 130px;
+    padding-bottom: 100px;
+}
+
+.gallery-card img{
+    margin-top: 25px;
+    border-radius: 3px;
+}
+.gallery-card p {
+    margin-top: 0; 
 }
 
 .card{
     margin-left: 35%;
     margin-top: 10px;
     height: 250px;
-    width: 450px;
+    width: 30%;
     text-align: center;
 }
 
@@ -100,18 +130,15 @@ body{
     text-align: center;
     font-size: 18px;
     color: #f1f1f1;
+    margin-left: 2%;
 }
-.gallery-text {
-    text-align: center;
-    font-size: 15px;
-    color: #f1f1f1;
-}
+
 .open-project {
     text-decoration: none;
     color: #f1f1f1;
     background: #444343;
     padding: 5px 5px 5px 5px;
-    margin-left: 50%;
+    margin-left: 47%;
     transition: background-color 1.2s;  
 }
 
@@ -131,16 +158,22 @@ body{
 
 .description {
     text-align: center;
-    color: #f1f1f1;
+    color: #fff;
     margin-top: 100px;
 }
 .description ul li{
     text-align: center;
     list-style: none;
+    margin-right: 12%;
 }
 
 .list {
     text-decoration: underline;
+}
+
+.voltar-topo {
+    color: red;
+    margin-right: 200px;
 }
 
 /*-----------RODAPÉ------------*/
@@ -148,6 +181,250 @@ body{
     padding-top: 50px;
     padding-bottom: 20px;
     background: linear-gradient(rgba(10, 10, 10, 0.637), rgba(0, 0, 0, 0.829));
-    color: #e2d1d1;
+    color: #fff;
     text-align: center;
+}
+/*-------- MEDIA QUERY ---------------*/
+
+@media (max-width: 1080px) {
+
+     /*--------------- MENU-----------*/
+
+    .header-nav ul {
+        border-radius: 2px;
+        padding-top: 10px;
+        padding-left: 5px;
+        background: rgba(211, 197, 197, 0.685);
+        position: absolute;
+        top: -7px;
+        right: 53px; 
+    }
+
+   
+    .header-nav ul li a:hover {
+        background-color: #706d6d;
+        color: rgb(12, 12, 12);
+    }
+    
+    
+    .header-nav ul li {
+        display: block;
+        padding-bottom: 10px;
+        
+    }
+
+    .social-media .icon{
+        margin-right: 500px;
+        background: transparent;
+        top: -20px;  
+        padding: -10px;
+
+    }
+
+
+    .social-media .icon li{
+        display: inline;
+        
+
+    }
+     
+
+    .icone-menu {
+        width: 1.5em;
+        
+    }
+
+    .icone-menu2 {
+        width: 1.5em;
+        
+    }
+    
+    .btn-menu{
+        float: right;
+        margin: .5em;
+        border: none;
+        border-radius: 8px;
+        background: rgba(68, 66, 66, 0.377);
+        font-size: 18px;
+       
+    }
+
+    .btn-menu2{
+        float: right;
+        clear: both;
+        margin: 10px;
+        margin-top: -40px;
+        border: none;
+        background: rgba(194, 184, 184, 0.753);
+        font-size: 18px;
+    }
+
+    .menu-open {
+        transform: translateX(0);
+    }
+
+    .headerMenu{
+        transform: translateX(200px);
+    }
+
+   
+
+
+     /*-----------PORTFOLIO------------ */
+
+    .seta {
+        background-color: rgba(224, 197, 197, 0.685);
+        width: 15%;
+        border-radius: 12px;
+        margin-top: 50px;
+    }
+    
+    /*------INÍCIO DA GALERIA------------*/
+
+    .card{
+        margin-left: 25%;
+        margin-top: 10px;
+        height: 200px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .open-project {
+        text-decoration: none;
+        color: #f1f1f1;
+        background: #444343;
+        padding: 5px 5px 5px 5px;
+        margin-left: 45%;
+        transition: background-color 1.2s;  
+    }
+
+    /*-----------PÁGINA SOBRE------------ */
+
+    .photo-perfil {
+        height: 200px;
+        width: 150px;
+        margin-top: 100px;
+        margin-left: 38%;
+        border-radius: 20px;
+    }
+
+    .description {
+        text-align: center;
+        color: #fff;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*-----------RODAPÉ------------*/
+
+    .rodape{
+        padding-top: 18px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 480px){
+
+    /*--------------- MENU-----------*/
+
+    .header-nav ul {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        
+    }
+    
+    .header-nav ul li {
+        display: block;
+        padding-bottom: 10px;
+    }   
+
+    .social-media .icon{
+        margin-right: 230px;
+        background: transparent;
+        top: -20px;  
+        padding: -10px;
+
+    }
+
+
+    .social-media .icon li{
+        display: inline;
+        
+
+    }
+    
+    /*-----------PORTFOLIO------------ */
+
+    .portfolio h1 {
+        font-size: 30px;
+        font-family: 'Lobster';
+        color: #fff;
+        
+    }
+
+    .portfolio h2 {
+        font-size: 20px;
+        font-family: 'Lobster';
+        color: #fff; 
+    }
+
+    .seta {
+        background-color: rgba(224, 197, 197, 0.685);
+        width: 20%;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    /*------INÍCIO DA GALERIA------------*/
+
+    .card{
+        margin-left: 10%;
+        margin-top: 10px;
+        height: 200px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .open-project {
+        text-decoration: none;
+        color: #f1f1f1;
+        background: #444343;
+        padding: 5px 5px 5px 5px;
+        margin-left: 35%;
+        transition: background-color 1.2s;  
+    }
+
+    /*-----------PÁGINA SOBRE------------ */
+
+    .photo-perfil {
+        height: 200px;
+        width: 150px;
+        margin-top: 100px;
+        margin-left: 28%;
+        border-radius: 20px;
+    }
+
+    .description {
+        text-align: center;
+        color: #fff;
+        margin-top: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /*-----------RODAPÉ------------*/
+
+    .rodape{
+        padding-top: 18px;
+        font-size: 14px;
+        text-align: center;
+    }
 }
